@@ -1,8 +1,10 @@
 import http from 'k6/http';
 import { sleep } from 'k6';
 
-const VUS = 100;
-const DURATION = "1s";
+exporrt let options = {
+ vus: 100;
+ iterations: 100
+};
 
 export default function () {
     const res = http.get('http://home.takuro.work/');
