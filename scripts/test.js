@@ -8,6 +8,6 @@ export const options = {
 };
 
 export default function () {
-    const res = http.get('http://home.takuro.work/');
+    const res = http.get('/http://fjwr-nginx-alb-433563759.ap-northeast-1.elb.amazonaws.com/');
     sleep(1);
 }
